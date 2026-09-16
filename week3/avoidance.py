@@ -56,6 +56,7 @@ async def run():
             await drone.offboard.set_position_ned(PositionNedYaw(15,8,-10,0))
         else:
             await drone.offboard.set_position_ned(PositionNedYaw(30,0,-10,0))
+            
     print("Stopping offboard mode...")
     await drone.offboard.stop()
     print("Returning to launch...")
